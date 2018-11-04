@@ -9,4 +9,4 @@ interface IDrawableContext extends CanvasRenderingContext2D {
   putImageData(imagedata: IImageData, dx: number, dy: number): void;
 }
 
-export default IDrawableContext;
+export {IDrawableContext, IImageData};
