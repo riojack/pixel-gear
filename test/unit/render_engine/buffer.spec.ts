@@ -43,7 +43,7 @@ describe('Buffer test', () => {
   describe('when drawing image data', () => {
     it('should draw on the underlying drawable context', () => {
       mock_context.setup(x => x.putImageData(
-        TypeMoq.It.isValue({ data: rgba_pixel_array, height: 4, width: 4 }),
+        TypeMoq.It.isObjectWith({ data: rgba_pixel_array, height: 4, width: 4 }),
         TypeMoq.It.isValue(0),
         TypeMoq.It.isValue(0)
       ));

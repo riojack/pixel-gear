@@ -1,11 +1,11 @@
-import { IDrawableContext, IImageData } from "../interfaces/context";
+import { IDrawableContext } from "../interfaces/context";
 
 class Buffer {
   putRaw(image_data: Uint8ClampedArray, x: number, y: number, height: number, width: number): void {
-    const boxed_image_data: IImageData = {
-      data: image_data,
+    const boxed_image_data: ImageData = new ImageData(
+      image_data,
       height, width
-    };
+    );
     this._context.putImageData(boxed_image_data, x, y);
   }
   private _id: string;

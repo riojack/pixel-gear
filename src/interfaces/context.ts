@@ -4,7 +4,6 @@ interface IImageData {
   readonly width: number;
 }
 
-
 interface IDrawableContext extends CanvasRenderingContext2D {
   putImageData(imagedata: IImageData, dx: number, dy: number): void;
 }
