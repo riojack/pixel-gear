@@ -2,7 +2,7 @@ import * as chai from 'chai';
 import Buffer from '../../../src/render_engine/buffer';
 import 'mocha';
 import { IDrawableContext, IImageData } from '../../../src/interfaces/context';
-import * as TypeMoq from "typemoq";
+import * as TypeMoq from 'typemoq';
 
 describe('Buffer test', () => {
   const expectedBufferName = 'primary-buffer';

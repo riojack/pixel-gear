@@ -1,4 +1,4 @@
-import { IDrawableContext } from "../interfaces/context";
+import { IDrawableContext } from '../interfaces/context';
 
 class Buffer {
   putRaw(image_data: Uint8ClampedArray, x: number, y: number, height: number, width: number): void {
